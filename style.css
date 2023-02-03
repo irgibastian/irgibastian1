@@ -1,0 +1,607 @@
+/* Mendeklarasikan Semua */
+*{
+    text-decoration: none;
+    margin-top: 0;
+    margin: 0px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigasi Menu*/
+nav {
+    background: #57720e;
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #57720e;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 1;
+    border-bottom: 1px solid  ;
+    border-left: none;
+    border-right: none;
+    order: 2;
+}
+
+nav ul {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*logo*/
+nav ul li.logo {
+    flex: 4.5;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul li.logo:hover{
+    color: red;
+}
+/* Menu Items*/
+
+nav ul .Items {
+    padding: 0 30px;
+    display: inline;
+}
+
+nav ul .Items a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+nav ul.Items:hover {
+    color: red;
+}
+
+/*search box*/
+nav ul.search-icon {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+}
+
+/*search box input*/
+nav ul .search-icon input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 5px 0 5px;
+}
+/*search box icon*/
+nav ul .search-icon .icon {
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+nav ul .search-icon .icon .span {
+    color: black;
+    font-size: 20px;
+}
+/* Property Slide CSS */
+
+
+/*pergerakan slide show */
+@keyframes fade1 {
+    0% {
+        opacity: 1;
+    }
+    33.3333% {
+        opacity: 0;
+    }
+    66.666% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade2 {
+    0% {
+        opacity: 0;
+    }
+    33.3333% {
+        opacity: 1;
+    }
+    66.666% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fade3 {
+    0% {
+        opacity: 1;
+    }
+    33.3333% {
+        opacity: 0;
+    }
+    66.666% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fade4 {
+    0% {
+        opacity: 0;
+    }
+    33.3333% {
+        opacity: 0;
+    }
+    66.666% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+/* Kata sambutan, Foto Kepala Sekolah, visimisi */
+.sambutan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 0px;
+}
+.sambutan h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sambutan p {
+    padding: 15px 0;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: normal;
+}
+/* Foto kepala sekolah */
+.kepsek {
+    margin:  30 0px;
+}
+.kepsek .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.kepsek .container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    -webkit-box-shadow : 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
+}
+/*untu visimisi */
+.kepsek .container .visimisi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+
+.kepsek .container .visimisi .visi {
+    margin:  50px 100px 0;
+}
+.kepsek .container .visimisi .visi h5 {
+    font-size: 1.2rem;
+    font-weight: 250;
+    letter-spacing: 2px;
+}
+.kepsek .container .visimisi h3 {
+    font-size: 1.5rem;
+    font-weight: 250;
+    letter-spacing: 1px;
+}
+/* untuk misi */
+.kepsek .container .visimisi .misi h5 {
+    font-size: 1.2rem;
+    font-style: bold;
+}
+.kepsek .container .visimisi .misi li {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin: 5px 10px 0;
+
+
+}   
+
+/* property css galery */
+.galeri {
+    padding: 50px 0;
+    margin-top: 100px;
+    
+}
+.galeri h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.galeri .boxgaleri {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.galeri .boxgaleri .perbox {
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+
+}
+.galeri .boxgaleri .perbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.galeri .boxgaleri .perbox h3 {
+    position: absolute;
+    bottom: -8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 0;
+    padding-left: 1.5px;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    font-size: 1rem;
+}
+
+.galeri .boxgaleri .perbox:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* Property CSS Artikel */
+.containerArtikelHome {
+    padding-top: 60px;
+}
+
+.containerArtikelHome h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.containerArtikelHome:hover h2 {
+    color: #57720e;
+}
+
+.containerArtikelHome .asrtikelHome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerArtikelHome .asrtikelHome .perArtikelhome {
+    width: 350px;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.containerArtikelHome .asrtikelHome .perArtikelhome img {
+    width: 89%;
+    height: 200px;
+    border-radius: 5%;
+    margin-bottom: 15px;
+}
+
+.containerArtikelHome .asrtikelHome .perArtikelhome h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 900;
+    color: black;
+}
+.containerArtikelHome .asrtikelHome .perArtikelhome:hover h3 {
+    color: red;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.containerArtikelHome .asrtikelHome .perArtikelhome small {
+    color:  black;
+}
+.containerArtikelHome .asrtikelHome .perArtikelhome small span {
+    color: blue;
+    font-weight: 700;
+}
+
+.containerArtikelHome .asrtikelHome .perArtikelhome p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* Halaman css Ektrakulikuler */
+.title {
+    margin: 180px auto 50px auto;
+}
+
+.title h1 {
+    font-size: 2.0rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align:  center;
+    line-height: 30px;
+}
+
+.title p {
+    padding: 15px 0;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*Letak Box Gambar */
+.ektrakulikuler .boxektrakulikuler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.ektrakulikuler .boxektrakulikuler .perbox {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 20px 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ektrakulikuler .boxektrakulikuler .perbox img {
+    position: absolute;
+    top:  0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.ektrakulikuler .boxektrakulikuler .perbox:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.ektrakulikuler .boxektrakulikuler .perbox h3 {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgb(161, 172, 14);
+    color: black;
+    border-radius: 20px;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+}
+
+.ektrakulikuler .boxektrakulikuler .perbox:hover h3 {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(0px);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Property Css Contact Us */
+.wrapper {
+    margin: 180px auto 50px auto;
+    background: #d8dad6;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 70px;
+}
+
+.wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 6px;
+}
+
+.wrapper p {
+    padding: 150px 0px;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.wrapper input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.wrapper textarea {
+    height: 80px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.wrapper input,
+.wrapper textarea {
+    width: 50%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid cornsilk;
+}
+
+.wrapper input[type="submit"] {
+    border-bottom: none;
+    cursor: pointer;
+    background: blue;
+    color: white;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* Property Css Footer */
+footer {
+ background: #57720e;
+ height: auto;
+ width: 100vw;
+ font-family: open sans-serif;
+ padding-top: 40px;
+ color: black;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials  {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+}
+
+.social a i {
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+}
+
+.social a:hover {
+    color: red;
+}
+
+.footer-bottom {
+    background: white;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span {
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #57720e;
+}
+
+
+
+
